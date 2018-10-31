@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block header %}{% endblock %}
+    <meta charset="UTF-8">
+    <title>小饭桌</title>
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}></script>
+    <script src="{% static 'js/index.min.js' %}></script>
+</head>
+<body>
+<!-- 顶部导航条 -->
+<div class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="#"></a>
+        </div>
+        <div class="top_catogery">
+            <ul>
+                <li>
+                    <a>咨询</a>
+                </li>
+                <li class="active">
+                    <a>在线课堂</a>
+                </li>
+                <li>
+                    <a>企业服务</a>
+                </li>
+                <li>
+                    <a>搜索</a>
+                </li>
+            </ul>
+        </div>
+        <div class="auth-group">
+           <!-- <span class="icon-person">&#xe6ab;</span> -->
+            <div class="icon-content"><a id="sign-in" href="#">登陆</a>/<a id="sign-up" href="#">注册</a></div>
+        </div>
+    </div>
+</div>
+<!-- 在线课堂导航 -->
+<div class="courseheader">
+    <div class="title-group">
+        <div class="title"><a href="#">在线课堂</a></div>
+        <ul class="course-categpry">
+            <li class="active"><a href="#">最新课堂</a></li>
+            <li><a href="#">系列课</a></li>
+            <li><a href="#">投资人说</a></li>
+            <li><a href="#">明星案例</a></li>
+        </ul>
+        <div class="mycourse"><a href="#">我的课堂</a></div>
+    </div>
+</div>
+<!-- 导航结束 -->
+<div class="main">
+    {% block content %} {% endblock %}
+    <!--底部footer -->
+    <div class="foot-warpper">
+        <div class="cooperation">
+            <div class="cp-dispaly">
+            <p>合作伙伴</p>
+            <ul>
+                <li><a href="#" target="_blank"><img src="https://static-image.xfz.cn/1458712198_488.png"></a></li>
+                <li><a href="#"><img src="https://static-image.xfz.cn/1479889334_138.png"></a></li>
+                <li><a href="#"><img src="https://static-image.xfz.cn/1454046614_958.png"></a></li>
+                <li><a href="#"><img src="https://static-image.xfz.cn/1454046552_487.png"></a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="copyritght-group">
+            <span>©2018 北京子木投资顾问有限公司 京ICP备15051289号-1 | 增值电信业务经营许可证：京B2-20170574</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
